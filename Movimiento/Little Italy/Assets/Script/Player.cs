@@ -58,6 +58,7 @@ public class Player : MonoBehaviour
         {
             input.Normalize();//Normaliza el vector para que la velocidad diagonal no sea mayor a la speed establecida
         }
-        rb.linearVelocity = input * speed;
+        //print(Time.fixedDeltaTime);
+        rb.linearVelocity = input * speed * Time.fixedDeltaTime * 100f;
     }
 }
