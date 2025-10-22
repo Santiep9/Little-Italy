@@ -1,3 +1,4 @@
+using UnityEngine.InputSystem;
 using UnityEngine;
 
 //para ver el mensaje bien necesario instalar la extiension "Better Comments".
@@ -33,16 +34,30 @@ public class Player : MonoBehaviour
     private float moveHorizontal;
     private float moveVertical;
 
+    [Header("Input Settings")]
+    public InputActionAsset inputActions; // Da acceso a todas las acciones de input definidas en el Input Action Asset
+    private InputAction m_moveAction;// Se utiliza para almacenar la acción que queremos utilizar
+    private Vector2 m_moveAmt;
+
+    private void OnEneable()//Se habilita el Action Map del jugador
+    {
+        inputActions.FindActionMap("Player").Enable();
+    }
+    private void OnDiseable()//Se deshabilita el Action Map del jugador
+    {
+        inputActions.FindActionMap("Player").Disable();
+    }
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        m_moveAction = InputSystem.actions.FindAction("Move");//Busca la acción "Move" definida en el Input Action Asset
     }
 
     // Update se usa para leer input cada frame
     void Update()
     {
-        moveHorizontal = Input.GetAxisRaw("Horizontal");
-        moveVertical = Input.GetAxisRaw("Vertical");
+        m_moveAmt = m_moveAction.ReadValue<Vector2>();//Lee el valor del vector de los inputs
     }
 
     // FixedUpdate para aplicar la física
@@ -53,12 +68,12 @@ public class Player : MonoBehaviour
 
     private void Move()
     {
-        Vector2 input = new Vector2(moveHorizontal, moveVertical);
-        if (input.sqrMagnitude > 1f)
+        
+        if (m_moveAmt.sqrMagnitude > 1f)
         {
-            input.Normalize();//Normaliza el vector para que la velocidad diagonal no sea mayor a la speed establecida
+            m_moveAmt.Normalize();//Normaliza el vector para que la velocidad diagonal no sea mayor a la speed establecida
         }
-        //print(Time.fixedDeltaTime);
-        rb.linearVelocity = input * speed * Time.fixedDeltaTime * 100f;
+        rb.linearVelocity = m_moveAmt * speed;
+        ////print(m_moveAmt);
     }
 }
