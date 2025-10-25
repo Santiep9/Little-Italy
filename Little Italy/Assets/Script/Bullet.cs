@@ -1,44 +1,48 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Bullet : MonoBehaviour
 {
-
+    //Sonido para mas tarde
+    /*
+    [Header("Sonido al impactar")]
     public AudioClip hitSound;
-    private AudioSource audioSource;
+    private AudioSource audioSource;*/
 
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        //Sonido para mas tarde
+        /*
+         audioSource = GetComponent<AudioSource>(); 
+         */
+
+        //Validacion hasta que hayan paredes o rigid bodys para que no explote el engine de balas infinitas por el mapa
+        Destroy(gameObject, 2f);
     }
-    private void OnCollisionEnter(Collision collision)
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Target"))
         {
-            //Audio hit
+            //Sonido para mas tarde
+            /*
             if (audioSource != null && hitSound != null)
             {
                 audioSource.PlayOneShot(hitSound);
-            }
+            }*/
 
-            // Change its color to red (must have a Renderer)
-            Renderer renderer = collision.gameObject.GetComponent<Renderer>();
+            //Cambiar color del objetivo a rojo
+            SpriteRenderer renderer = collision.gameObject.GetComponent<SpriteRenderer>();
             if (renderer != null)
             {
-                renderer.material.color = Color.red;
-
+                renderer.color = Color.red;
             }
 
-            Destroy( collision.gameObject, 0.3f);
-        
+            //Destruir objetivo
+            Destroy(collision.gameObject, 0.3f);
         }
 
-        if (collision.gameObject != null)
-        {
-            Destroy(gameObject, 1f);
-        }
-
-        // Optional: Destroy bullet on impact
-        Destroy(gameObject, 0.6f);
+        // Destruir bala
+        Destroy(gameObject, 0.1f);
     }
 }
+
