@@ -3,7 +3,7 @@ using UnityEngine;
 public class EnemyFollow : MonoBehaviour
 {
     public float speed = 3f;
-    public float gravedadArtificial = 1f;
+    public float gravedadArtificial = 0f;// no tiene que tener gravedad, en el juego no existe como tal, porque se ve desde arriba(es un juego Top Down)
 
     private Transform player; //lo que siguen
 

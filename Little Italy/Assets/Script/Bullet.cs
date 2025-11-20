@@ -21,14 +21,14 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Target"))
+        /*if (collision.gameObject.CompareTag("Target"))
         {
             //Sonido para mas tarde
-            /*
+            
             if (audioSource != null && hitSound != null)
             {
                 audioSource.PlayOneShot(hitSound);
-            }*/
+            }
 
             //Cambiar color del objetivo a rojo
             SpriteRenderer renderer = collision.gameObject.GetComponent<SpriteRenderer>();
@@ -39,7 +39,7 @@ public class Bullet : MonoBehaviour
 
             //Destruir objetivo
             Destroy(collision.gameObject, 0.3f);
-        }
+        }*/
 
         // Destruir bala
         Destroy(gameObject, 0.1f);
