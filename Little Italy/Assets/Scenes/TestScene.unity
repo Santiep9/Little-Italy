@@ -473,6 +473,63 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!1001 &907428650
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5826183929550256246, guid: 8b0fa18c440dd1749a8a9a2c027e160b, type: 3}
+      propertyPath: m_Name
+      value: Potenciador
+      objectReference: {fileID: 0}
+    - target: {fileID: 6700583619819902108, guid: 8b0fa18c440dd1749a8a9a2c027e160b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.4921165
+      objectReference: {fileID: 0}
+    - target: {fileID: 6700583619819902108, guid: 8b0fa18c440dd1749a8a9a2c027e160b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.95785385
+      objectReference: {fileID: 0}
+    - target: {fileID: 6700583619819902108, guid: 8b0fa18c440dd1749a8a9a2c027e160b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6700583619819902108, guid: 8b0fa18c440dd1749a8a9a2c027e160b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6700583619819902108, guid: 8b0fa18c440dd1749a8a9a2c027e160b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6700583619819902108, guid: 8b0fa18c440dd1749a8a9a2c027e160b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6700583619819902108, guid: 8b0fa18c440dd1749a8a9a2c027e160b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6700583619819902108, guid: 8b0fa18c440dd1749a8a9a2c027e160b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6700583619819902108, guid: 8b0fa18c440dd1749a8a9a2c027e160b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6700583619819902108, guid: 8b0fa18c440dd1749a8a9a2c027e160b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8b0fa18c440dd1749a8a9a2c027e160b, type: 3}
 --- !u!1 &1352008489
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,6 +795,7 @@ GameObject:
   - component: {fileID: 1616599225}
   - component: {fileID: 1616599223}
   - component: {fileID: 1616599228}
+  - component: {fileID: 1616599229}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -758,6 +816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   speed: 4
+  baseSpeed: 4
   inputActions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
 --- !u!23 &1616599225
 MeshRenderer:
@@ -859,6 +918,52 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &1616599229
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616599222}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1903190579
 GameObject:
   m_ObjectHideFlags: 0
@@ -993,3 +1098,4 @@ SceneRoots:
   - {fileID: 1616599227}
   - {fileID: 379252907}
   - {fileID: 865586135}
+  - {fileID: 907428650}

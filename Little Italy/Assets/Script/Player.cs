@@ -30,7 +30,8 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
 
     [Header("Movement Settings")]
-    [SerializeField] private float speed; // poner la speed a 7
+    public float speed; // poner la speed a 7
+    public float baseSpeed = 7;
     private float moveHorizontal;
     private float moveVertical;
 
@@ -39,11 +40,11 @@ public class Player : MonoBehaviour
     private InputAction m_moveAction;// Se utiliza para almacenar la acción que queremos utilizar
     private Vector2 m_moveAmt;
 
-    private void OnEneable()//Se habilita el Action Map del jugador
+    private void OnEnable()//Se habilita el Action Map del jugador
     {
         inputActions.FindActionMap("Player").Enable();
     }
-    private void OnDiseable()//Se deshabilita el Action Map del jugador
+    private void OnDisable()//Se deshabilita el Action Map del jugador
     {
         inputActions.FindActionMap("Player").Disable();
     }
@@ -75,5 +76,21 @@ public class Player : MonoBehaviour
         }
         rb.linearVelocity = m_moveAmt * speed;
         ////print(m_moveAmt);
+    }
+
+    //Speed
+    public float GetSpeed()
+    {
+        return speed;
+    }
+
+    public void AddSpeed(float amount)
+    {
+        speed += amount;
+    }
+
+    public void ResetSpeed()
+    {
+        speed = baseSpeed;
     }
 }
