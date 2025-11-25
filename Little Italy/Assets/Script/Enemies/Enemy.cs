@@ -47,5 +47,12 @@ public class Enemy : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+
+        if (collision.gameObject.CompareTag("Player"))
+        {
+                Debug.Log("GAME OVER");
+            // Detener el tiempo para la memoria
+            Time.timeScale = 0f;
+        }
     }
 }
