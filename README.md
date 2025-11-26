@@ -1,7 +1,8 @@
 Movimiento del Personaje 
 
-https://github.com/user-attachments/assets/d5e47b39-36fb-4e99-a47a-4d9594fcbcdc
 
+
+![Little-Italy-TestScene-Windows_-Mac_-Linux-Unity-6 2-_6000 2 7f2_-_DX12_-2025-11-25-23-28-00](https://github.com/user-attachments/assets/0127e920-669e-4c57-a48a-5343a416e136)
 
 
 
