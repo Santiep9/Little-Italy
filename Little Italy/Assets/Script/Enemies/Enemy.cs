@@ -48,4 +48,14 @@ public class Enemy : MonoBehaviour
             }
         }
     }
+    public void TakeDamage(int amount)
+    {
+        Health -= amount;
+        Debug.Log("Enemy Health: " + Health);
+
+        if (Health <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
 }
