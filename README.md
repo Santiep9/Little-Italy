@@ -60,10 +60,15 @@ Level Design
 
 Nombres:
 RKPlane --> Alberto
+
 Santiep9 --> Santi
+
 maizzon14 --> Marcos
+
 Felix32323232 --> Felix
+
 fjnl2006 --> Fran
+
 HERNI47 --> Hernan
 
 
