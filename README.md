@@ -58,3 +58,12 @@ Level Design
 
 <img width="778" height="447" alt="image" src="https://github.com/user-attachments/assets/4fbbeac4-e396-443f-afc4-5b7069804a0e" />
 
+Nombres:
+RKPlane --> Alberto
+Santiep9 --> Santi
+maizzon14 --> Marcos
+Felix32323232 --> Felix
+fjnl2006 --> Fran
+HERNI47 --> Hernan
+
+
