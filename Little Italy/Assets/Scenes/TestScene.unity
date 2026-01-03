@@ -119,6 +119,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &360754808
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 360754809}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &360754809
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360754808}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.09, y: -4.63, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &379252905
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,7 +206,7 @@ GameObject:
   - component: {fileID: 685972534}
   - component: {fileID: 685972536}
   - component: {fileID: 685972535}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sniper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,6 +323,8 @@ GameObject:
   - component: {fileID: 865586133}
   - component: {fileID: 865586136}
   - component: {fileID: 865586137}
+  - component: {fileID: 865586139}
+  - component: {fileID: 865586138}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Enemy
@@ -445,6 +478,59 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &865586138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865586132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e520dbad293b86429f8ab0795bd5405, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Systems.AI.EnemyFollowNewMethod
+  viewRadius: 4.13
+  viewAngle: 64.3
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  patrolSpeed: 2
+  chaseSpeed: 5.5
+  rotationSpeed: 5
+  waypoints:
+  - {fileID: 1081564555}
+  - {fileID: 360754809}
+--- !u!50 &865586139
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865586132}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &907428650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -502,6 +588,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b0fa18c440dd1749a8a9a2c027e160b, type: 3}
+--- !u!1 &1081564554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1081564555}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1081564555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081564554}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.09, y: 3.35, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1138791789
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,7 +629,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1138791790}
   - component: {fileID: 1138791791}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Shotgun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -604,7 +721,7 @@ GameObject:
   - component: {fileID: 1352008490}
   - component: {fileID: 1352008492}
   - component: {fileID: 1352008491}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Glock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -720,7 +837,7 @@ GameObject:
   - component: {fileID: 1525017947}
   - component: {fileID: 1525017946}
   - component: {fileID: 1525017945}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CONO ESCOPETA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -968,7 +1085,7 @@ GameObject:
   - component: {fileID: 1616599223}
   - component: {fileID: 1616599228}
   - component: {fileID: 1616599229}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1055,7 +1172,7 @@ Transform:
   m_GameObject: {fileID: 1616599222}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -5.62, y: 0.59, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1410,3 +1527,5 @@ SceneRoots:
   - {fileID: 865586135}
   - {fileID: 907428650}
   - {fileID: 1757568737}
+  - {fileID: 1081564555}
+  - {fileID: 360754809}
