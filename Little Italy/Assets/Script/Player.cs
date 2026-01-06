@@ -40,6 +40,12 @@ public class Player : MonoBehaviour
     private InputAction m_moveAction;// Se utiliza para almacenar la acción que queremos utilizar
     private Vector2 m_moveAmt;
 
+    [Header("Atributos especiales escopeta")]
+    public ConoShotgun cono;
+    public Vector3 AimDirection { get; private set; }
+    public float cooldownEscopeta;
+    float lastShot;
+
     private void OnEnable()//Se habilita el Action Map del jugador
     {
         inputActions.FindActionMap("Player").Enable();
@@ -59,13 +65,20 @@ public class Player : MonoBehaviour
     void Update()
     {
         m_moveAmt = m_moveAction.ReadValue<Vector2>();//Lee el valor del vector de los inputs
+
+        LookAtMouse();
+        ShotgunShot();
     }
 
     // FixedUpdate para aplicar la física
     void FixedUpdate()
     {
-        LookAtMouse();
         Move();
+        if(cono != null)
+        {
+            cono.SetOrigin(transform.position);
+            cono.SetAimDirection(AimDirection); //de donde sale el cono
+        }
     }
 
     private void Move()
@@ -98,6 +111,20 @@ public class Player : MonoBehaviour
     private void LookAtMouse()
     {
         Vector2 mousePos = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        transform.up = (Vector3)(mousePos - new Vector2(transform.position.x, transform.position.y));
+        Vector3 dir = (Vector3)(mousePos - (Vector2)transform.position);
+
+        AimDirection = dir.normalized;
+        transform.up = AimDirection;
+    }
+
+    public void ShotgunShot()
+    {
+        bool shotThisFrame = Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame;
+
+        if (shotThisFrame && cono != null && Time.time >= lastShot + cooldownEscopeta)
+        {
+            lastShot = Time.time;
+            cono.TriggerShot();
+        }
     }
 }
