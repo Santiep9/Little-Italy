@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Mapping.unity
     guid: 1e37dd8774e26be439a8a1d192d2f768
   - enabled: 1
+    path: Assets/Scenes/VICTORIA.unity
+    guid: 49fc45288f2cc154883d9017f4fdd9d8
+  - enabled: 1
     path: Assets/Scenes/Morido.unity
     guid: b7ac2c5cc6717084c88247674ae592d4
   m_configObjects:
