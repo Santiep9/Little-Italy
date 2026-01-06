@@ -10,7 +10,7 @@ namespace Systems.AI
         private enum State { Patrolling, Chasing }
 
         [Header("Configuracion de Vision")] 
-        [SerializeField] private float viewRadius =8f;
+        [SerializeField] private float viewRadius =0.8f;
         [SerializeField] private float viewAngle = 90f;
         [SerializeField] private LayerMask playerLayer;
         [SerializeField] private LayerMask obstacleLayer;
@@ -20,6 +20,9 @@ namespace Systems.AI
         [SerializeField] private float chaseSpeed = 5.5f;
         [SerializeField] private float rotationSpeed = 5f;
         [SerializeField] private Transform[] waypoints;
+
+        [Header("Script de Persecución")]
+        [SerializeField] private EnemyFollow enemyFollowScript;
         
 
         private State _currentState;
@@ -34,19 +37,36 @@ namespace Systems.AI
             rb.gravityScale = 0;
             rb.freezeRotation = true;
             _currentState = State.Patrolling;
+
+            if (enemyFollowScript == null)
+            {
+                enemyFollowScript = GetComponent<EnemyFollow>();
+            }
+
+            if (enemyFollowScript != null)
+            {
+                enemyFollowScript.enabled = false;
+            }
         }
 
         private void Update()
         {
             LookForPlayer();
             StateMachineLogic();
+            if (_currentState == State.Patrolling)
+            {
+                RotateTowardsMovement(); 
+            }
             
-            RotateTowardsMovement();
         }
 
         private void FixedUpdate()
         {
-            MoveCharacter();
+            if (_currentState == State.Patrolling)
+            {
+                MoveCharacter();
+            }
+            
         }
 
         private void LookForPlayer()
@@ -62,7 +82,7 @@ namespace Systems.AI
                 {
                     float distToTarget = Vector2.Distance(transform.position, target.position);
 
-                    if (!Physics.Raycast(transform.position, dirToTarget, distToTarget, obstacleLayer))
+                    if (!Physics2D.Raycast(transform.position, dirToTarget, distToTarget, obstacleLayer))
                     {
                         _targetPlayer = target;
                         return;
@@ -77,17 +97,40 @@ namespace Systems.AI
             switch (_currentState)
             {
                 case State.Patrolling:
-                    if(_targetPlayer != null) _currentState= State.Chasing;
+                    if (_targetPlayer != null)
+                    {
+                        _currentState= State.Chasing;
+                        OnStartChasing();
+                    }
                     CalculatePatrolDirection();
                     break;
                 case State.Chasing:
-                    if (_targetPlayer == null) _currentState = State.Chasing;
-                    else CalculateChaseDirection();
+                    if (_targetPlayer == null)
+                    {
+                        _currentState = State.Patrolling;
+                        OnStopChasing();
+                    }
                     break;
                     
             }
         }
 
+        private void OnStartChasing()
+        {
+            if (enemyFollowScript != null)
+            {
+                enemyFollowScript.enabled = true;
+            }
+            rb.linearVelocity = Vector2.zero;
+        }
+
+        private void OnStopChasing()
+        {
+            if (enemyFollowScript != null)
+            {
+                enemyFollowScript.enabled = false;
+            }
+        }
         private void CalculateChaseDirection()
         {
             if (_targetPlayer != null) return;
@@ -126,7 +169,7 @@ namespace Systems.AI
             
             Quaternion targetRotation = Quaternion.AngleAxis(angle, Vector3.forward);
             
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.fixedDeltaTime);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
             
         }
 

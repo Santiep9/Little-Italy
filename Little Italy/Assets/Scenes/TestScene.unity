@@ -317,6 +317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   health: 100
+  damage: 35
 --- !u!61 &865586137
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -389,6 +390,7 @@ MonoBehaviour:
   waypoints:
   - {fileID: 1081564555}
   - {fileID: 360754809}
+  enemyFollowScript: {fileID: 865586133}
 --- !u!50 &865586139
 Rigidbody2D:
   serializedVersion: 5
