@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
+using UnityEngine.UIElements;
 
 public class ConoShotgun : MonoBehaviour
 {
@@ -12,12 +13,19 @@ public class ConoShotgun : MonoBehaviour
     private float startingAngle;
     private float fov;
     public int damage = 25;
+
+    private bool doShotThisFrame;
+    private float showTimer;
+    private float showDuration = 0.05f;
+    private MeshRenderer meshRenderer;
+
     void Start()
     {
         mesh = new Mesh();
         GetComponent<MeshFilter>().mesh = mesh;
-        origin = Vector3.zero;
         fov = 90f; //esto es el cono basicamente
+        meshRenderer = GetComponent<MeshRenderer>();
+        meshRenderer.enabled = false;
     }
 
     private void FixedUpdate()
@@ -31,31 +39,38 @@ public class ConoShotgun : MonoBehaviour
         Vector2[] uv = new Vector2[vertices.Length];
         int[] triangulos = new int[rayCount * 3];
 
-        vertices[0] = origin;
+        vertices[0] = Vector3.zero;
 
         int verticeIndex = 1;
         int trianguloIndex = 0;
-        bool isShooting = Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame;
 
         List<Enemy> enemiesHitThisShot = new List<Enemy>();
 
+        bool applyDamage = doShotThisFrame;
+
         for (int i = 0; i <= rayCount; i++)
         {
-            Vector3 vertex;
-            RaycastHit2D raycastHit2D = Physics2D.Raycast(origin, GetVectorFromAngle(angle), viewDistance, layerMask);
-            RaycastHit2D raycastHit2DEnemy = Physics2D.Raycast(origin, GetVectorFromAngle(angle), viewDistance, layerEnemigos);
+            Vector3 dirWorld = GetVectorFromAngle(angle);
+            RaycastHit2D raycastHit2D = Physics2D.Raycast(origin, dirWorld, viewDistance, layerMask);
+            RaycastHit2D raycastHit2DEnemy = Physics2D.Raycast(origin, dirWorld, viewDistance, layerEnemigos);
+
+            Vector3 hitWorldPos;
+
             if (raycastHit2D.collider == null)
             {
                 //no esta colisionando con nada
-                vertex = origin + GetVectorFromAngle(angle) * viewDistance;
+                hitWorldPos = origin + dirWorld * viewDistance;
             }
             else
             {
                 //si colisiona con algo, compruebo si es enemigo
-                    vertex = raycastHit2D.point;
+                 hitWorldPos = raycastHit2D.point;
             }
 
-            if (isShooting && raycastHit2DEnemy.collider != null)
+            Vector3 vertexLocal = transform.InverseTransformPoint(hitWorldPos);
+            vertices[verticeIndex] = vertexLocal;
+
+            if (applyDamage && raycastHit2DEnemy.collider != null)
             {
                 Enemy enemy = raycastHit2DEnemy.collider.GetComponent<Enemy>();
                 if (enemy != null && !enemiesHitThisShot.Contains(enemy))
@@ -64,7 +79,6 @@ public class ConoShotgun : MonoBehaviour
                     enemiesHitThisShot.Add(enemy);
                 }
             }
-            vertices[verticeIndex] = vertex;
 
             if (i > 0)
             {
@@ -79,20 +93,43 @@ public class ConoShotgun : MonoBehaviour
             angle -= angleAumento;
         }
 
+        mesh.Clear();
         mesh.vertices = vertices;
         mesh.uv = uv;
         mesh.triangles = triangulos;
 
+        if(doShotThisFrame)
+        {
+            meshRenderer.enabled = true;
+            showTimer = showDuration;
+        }
+        if(showTimer > 0f)
+        {
+            showTimer -= Time.fixedDeltaTime;
+            if(showTimer <= 0f)
+            {
+                meshRenderer.enabled = false;
+            }
+        }
+
+        doShotThisFrame = false;
     }
 
-    public void SetOrigin(Vector3 origin)
+    public void SetOrigin(Vector3 originWorld)
     {
-        this.origin = origin;
+        origin = originWorld;
+        transform.position = originWorld;
     }
 
     public void SetAimDirection(Vector3 aimDirection)
     {
-        startingAngle = GetAngleFromVectorFloat(aimDirection) - fov / 2f;
+        float angle = GetAngleFromVectorFloat(aimDirection);
+        angle += 90f;
+        startingAngle = angle - fov / 2f;
+    }
+    public void TriggerShot()
+    {
+        doShotThisFrame = true;
     }
     public static Vector3 GetVectorFromAngle(float angle)
     {
