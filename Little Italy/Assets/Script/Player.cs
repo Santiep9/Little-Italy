@@ -135,6 +135,8 @@ public class Player : MonoBehaviour
         //Codigo de pantalla derrota
 
         gameObject.SetActive(false);
+        // Detener el tiempo para la memoria
+        Time.timeScale = 0f;
     }
 
     //Speed

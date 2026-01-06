@@ -66,22 +66,8 @@ public class Enemy : MonoBehaviour
             {
                 player.TakeDamage(damage);
             }
-            // Detener el tiempo para la memoria
-            Time.timeScale = 0f;
         }
     }
-
-        private void OnTriggerEnter2D(Collider2D other)
-        {
-            if (other.CompareTag("Player"))
-            {
-                Player player = other.GetComponent<Player>();
-                if (player != null)
-                {
-                    player.TakeDamage(damage);
-                }
-            }
-        }
 
     public void TakeDamage(int amount)
     {
