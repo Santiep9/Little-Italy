@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
 {
     private int maxHealth = 100;
     [SerializeField]private int health = 100;
+    Randomizer dropper;
     public int Health
     {
         get { return health; }
@@ -14,7 +15,7 @@ public class Enemy : MonoBehaviour
     }
     void Start()
     {
-        
+        dropper = GetComponent<Randomizer>();
     }
 
     // Update is called once per frame
@@ -32,6 +33,10 @@ public class Enemy : MonoBehaviour
             Debug.Log("Enemy Health: " + Health);
             if(Health <= 0)
             {
+                if (dropper != null)
+                {
+                    dropper.SpawnPowerUp();
+                }
                 Destroy(gameObject);
             }
         }
