@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     private int maxHealth = 100;
     [SerializeField]private int health = 100;
     Randomizer dropper;
+    public int damage = 35;
     public int Health
     {
         get { return health; }
@@ -47,17 +48,49 @@ public class Enemy : MonoBehaviour
             Debug.Log("Hit by Glock Bullet");
             Health -= 10;
             Debug.Log("Enemy Health: " + Health);
-            if(Health <= 0)
+            if (Health <= 0)
             {
+                if (dropper != null)
+                {
+                    dropper.SpawnPowerUp();
+                }
                 Destroy(gameObject);
             }
         }
 
         if (collision.gameObject.CompareTag("Player"))
         {
-                Debug.Log("GAME OVER");
+            Debug.Log("Daño");
+            Player player = GetComponent<Player>();
+            if (player != null)
+            {
+                player.TakeDamage(damage);
+            }
             // Detener el tiempo para la memoria
             Time.timeScale = 0f;
+        }
+    }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.CompareTag("Player"))
+            {
+                Player player = other.GetComponent<Player>();
+                if (player != null)
+                {
+                    player.TakeDamage(damage);
+                }
+            }
+        }
+
+    public void TakeDamage(int amount)
+    {
+        Health -= amount;
+        Debug.Log("Enemy Health: " + Health);
+
+        if (Health <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 }
