@@ -1,5 +1,6 @@
 using UnityEngine.InputSystem;
 using UnityEngine;
+using System.Collections;
 
 //para ver el mensaje bien necesario instalar la extiension "Better Comments".
 //
@@ -39,6 +40,11 @@ public class Player : MonoBehaviour
     public InputActionAsset inputActions; // Da acceso a todas las acciones de input definidas en el Input Action Asset
     private InputAction m_moveAction;// Se utiliza para almacenar la acción que queremos utilizar
     private Vector2 m_moveAmt;
+
+    [Header("Damage Settings")]
+    public float damageCooldown = 1f; // cd del damage
+    private bool canTakeDamage = true; //validacion
+    private bool invincible = false;
 
     [Header("Atributos especiales escopeta")]
     public ConoShotgun cono;
@@ -92,6 +98,45 @@ public class Player : MonoBehaviour
         ////print(m_moveAmt);
     }
 
+    public void TakeDamage(int damage)
+    {
+        //cd del damage
+        if (!canTakeDamage)
+            return;
+
+        //boost invencible
+        if (invincible)
+            return;
+
+        Health -= damage;
+        Debug.Log("PLAYER DAMAGE: -" + damage + " | HP: " + Health);
+
+        if (Health <= 0)
+        {
+            Die();
+        }
+        else
+        {
+            StartCoroutine(DamageCooldown());
+        }
+    }
+
+    private IEnumerator DamageCooldown() //COROUTINA DEL CD CON VALIDACION
+    {
+        canTakeDamage = false;
+        yield return new WaitForSeconds(damageCooldown);
+        canTakeDamage = true;
+    }
+
+    private void Die()
+    {
+        Debug.Log("PLAYER DEAD");
+
+        //Codigo de pantalla derrota
+
+        gameObject.SetActive(false);
+    }
+
     //Speed
     public float GetSpeed()
     {
@@ -106,6 +151,23 @@ public class Player : MonoBehaviour
     public void ResetSpeed()
     {
         speed = baseSpeed;
+    }
+
+    //HEAL
+    public void Heal(int amount)
+    {
+        Health += amount;
+    }
+
+    //INVENCIBLE
+    public void SetInvincible(bool value)
+    {
+        invincible = value;
+    }
+
+    public bool IsInvincible()
+    {
+        return invincible;
     }
 
     private void LookAtMouse()
