@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     public int Health
     {
         get { return health; }
-        set { health = Mathf.Clamp(value,0,maxHealth); }
+        set { health = Mathf.Clamp(value, 0, maxHealth); }
     }
     void Start()
     {
@@ -21,17 +21,17 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("BulletSniper"))//Este hace que el enemigo reciba 100 de daño al ser impactado por la bala que tiene el tag de BulletSniper
+        if (collision.gameObject.CompareTag("BulletSniper"))//Este hace que el enemigo reciba 100 de daño al ser impactado por la bala que tiene el tag de BulletSniper
         {
             Debug.Log("Hit by Sniper Bullet");
             Health -= 100;
             Debug.Log("Enemy Health: " + Health);
-            if(Health <= 0)
+            if (Health <= 0)
             {
                 if (dropper != null)
                 {
@@ -42,7 +42,7 @@ public class Enemy : MonoBehaviour
         }
 
 
-        if(collision.gameObject.CompareTag("BulletGlock"))//Este hace 10 de daño al ser impactado por la bala que tiene el tag de BulletGlock, "añadir posteriormente o una bala para el arma glock o cambiar el tag al cambiar de arma, se tendra que decidir" 
+        if (collision.gameObject.CompareTag("BulletGlock"))//Este hace 10 de daño al ser impactado por la bala que tiene el tag de BulletGlock, "añadir posteriormente o una bala para el arma glock o cambiar el tag al cambiar de arma, se tendra que decidir" 
         {
             Debug.Log("Hit by Glock Bullet");
             Health -= 10;

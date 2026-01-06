@@ -22,4 +22,7 @@ public class EnemyFollow : MonoBehaviour
 
         transform.position += direction.normalized * speed * Time.deltaTime; //utilizo normalized para separar la direccion de la magnitud y mantener velocidad constante para las diagonales raras
     }
+    
+    
+    
 }

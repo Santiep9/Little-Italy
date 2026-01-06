@@ -1,5 +1,6 @@
 using UnityEngine.InputSystem;
 using UnityEngine;
+using System.Collections;
 
 //para ver el mensaje bien necesario instalar la extiension "Better Comments".
 //
@@ -40,6 +41,17 @@ public class Player : MonoBehaviour
     private InputAction m_moveAction;// Se utiliza para almacenar la acción que queremos utilizar
     private Vector2 m_moveAmt;
 
+    [Header("Damage Settings")]
+    public float damageCooldown = 1f; // cd del damage
+    private bool canTakeDamage = true; //validacion
+    private bool invincible = false;
+
+    [Header("Atributos especiales escopeta")]
+    public ConoShotgun cono;
+    public Vector3 AimDirection { get; private set; }
+    public float cooldownEscopeta;
+    float lastShot;
+
     private void OnEnable()//Se habilita el Action Map del jugador
     {
         inputActions.FindActionMap("Player").Enable();
@@ -59,12 +71,20 @@ public class Player : MonoBehaviour
     void Update()
     {
         m_moveAmt = m_moveAction.ReadValue<Vector2>();//Lee el valor del vector de los inputs
+
+        LookAtMouse();
+        ShotgunShot();
     }
 
     // FixedUpdate para aplicar la física
     void FixedUpdate()
     {
         Move();
+        if(cono != null)
+        {
+            cono.SetOrigin(transform.position);
+            cono.SetAimDirection(AimDirection); //de donde sale el cono
+        }
     }
 
     private void Move()
@@ -76,6 +96,45 @@ public class Player : MonoBehaviour
         }
         rb.linearVelocity = m_moveAmt * speed;
         ////print(m_moveAmt);
+    }
+
+    public void TakeDamage(int damage)
+    {
+        //cd del damage
+        if (!canTakeDamage)
+            return;
+
+        //boost invencible
+        if (invincible)
+            return;
+
+        Health -= damage;
+        Debug.Log("PLAYER DAMAGE: -" + damage + " | HP: " + Health);
+
+        if (Health <= 0)
+        {
+            Die();
+        }
+        else
+        {
+            StartCoroutine(DamageCooldown());
+        }
+    }
+
+    private IEnumerator DamageCooldown() //COROUTINA DEL CD CON VALIDACION
+    {
+        canTakeDamage = false;
+        yield return new WaitForSeconds(damageCooldown);
+        canTakeDamage = true;
+    }
+
+    private void Die()
+    {
+        Debug.Log("PLAYER DEAD");
+
+        //Codigo de pantalla derrota
+
+        gameObject.SetActive(false);
     }
 
     //Speed
@@ -92,5 +151,42 @@ public class Player : MonoBehaviour
     public void ResetSpeed()
     {
         speed = baseSpeed;
+    }
+
+    //HEAL
+    public void Heal(int amount)
+    {
+        Health += amount;
+    }
+
+    //INVENCIBLE
+    public void SetInvincible(bool value)
+    {
+        invincible = value;
+    }
+
+    public bool IsInvincible()
+    {
+        return invincible;
+    }
+
+    private void LookAtMouse()
+    {
+        Vector2 mousePos = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 dir = (Vector3)(mousePos - (Vector2)transform.position);
+
+        AimDirection = dir.normalized;
+        transform.up = AimDirection;
+    }
+
+    public void ShotgunShot()
+    {
+        bool shotThisFrame = Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame;
+
+        if (shotThisFrame && cono != null && Time.time >= lastShot + cooldownEscopeta)
+        {
+            lastShot = Time.time;
+            cono.TriggerShot();
+        }
     }
 }
