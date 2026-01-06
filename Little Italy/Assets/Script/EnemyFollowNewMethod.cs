@@ -38,6 +38,8 @@ namespace Systems.AI
             rb.freezeRotation = true;
             _currentState = State.Patrolling;
 
+            RotateSprite();
+
             if (enemyFollowScript == null)
             {
                 enemyFollowScript = GetComponent<EnemyFollow>();
@@ -159,6 +161,15 @@ namespace Systems.AI
             float speed = (_currentState == State.Chasing) ? chaseSpeed : patrolSpeed;
             
             rb.MovePosition(rb.position + _moveDirection * speed * Time.fixedDeltaTime);
+        }
+        public void RotateSprite()
+        {
+            SpriteRenderer sr = GetComponent<SpriteRenderer>();
+
+            if (sr != null)
+            {
+                sr.transform.Rotate(0f, 0f, 90f);
+            }
         }
 
         private void RotateTowardsMovement()

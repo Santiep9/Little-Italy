@@ -52,6 +52,12 @@ public class Player : MonoBehaviour
     public Vector3 AimDirection { get; private set; }
     public float cooldownEscopeta;
     float lastShot;
+    [SerializeField] private Transform visual;
+
+    public void Rotate90()
+    {
+        visual.localRotation *= Quaternion.Euler(0f, 0f, 90f);
+    }
 
     private void OnEnable()//Se habilita el Action Map del jugador
     {
@@ -66,6 +72,9 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         m_moveAction = InputSystem.actions.FindAction("Move");//Busca la acción "Move" definida en el Input Action Asset
+
+        
+            
     }
 
     // Update se usa para leer input cada frame
@@ -192,4 +201,5 @@ public class Player : MonoBehaviour
             cono.TriggerShot();
         }
     }
+    
 }
