@@ -141,11 +141,9 @@ public class Player : MonoBehaviour
     private void Die()
     {
         Debug.Log("PLAYER DEAD");
-        Time.timeScale = 0f;
         SceneManager.LoadScene("Morido");
 
         gameObject.SetActive(false);
-        // Detener el tiempo para la memoria
         
     }
 

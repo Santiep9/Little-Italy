@@ -3,14 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class VICTORIA : MonoBehaviour
 {
-    public string sceneToLoad = "VICTORIA"; 
-
-    private void OnTriggerEnter(Collider other)
-    {
-        
+    private void OnTriggerEnter2D(Collider2D other)
+    {   
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(sceneToLoad);
+            SceneManager.LoadScene("VICTORIA");
         }
     }
 }
