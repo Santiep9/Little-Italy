@@ -1,6 +1,7 @@
 using UnityEngine.InputSystem;
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 //para ver el mensaje bien necesario instalar la extiension "Better Comments".
 //
@@ -131,12 +132,12 @@ public class Player : MonoBehaviour
     private void Die()
     {
         Debug.Log("PLAYER DEAD");
-
-        //Codigo de pantalla derrota
+        Time.timeScale = 0f;
+        SceneManager.LoadScene("Morido");
 
         gameObject.SetActive(false);
         // Detener el tiempo para la memoria
-        Time.timeScale = 0f;
+        
     }
 
     //Speed

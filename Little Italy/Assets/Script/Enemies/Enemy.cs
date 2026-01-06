@@ -60,8 +60,8 @@ public class Enemy : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Daño");
-            Player player = GetComponent<Player>();
+            Player player = collision.gameObject.GetComponent<Player>();
+            Debug.Log("Daño" + "Vida player: " + player.Health.ToString());
             if (player != null)
             {
                 player.TakeDamage(damage);
