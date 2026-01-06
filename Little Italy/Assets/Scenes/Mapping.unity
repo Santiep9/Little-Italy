@@ -293,6 +293,144 @@ PolygonCollider2D:
       - {x: -10.940958, y: -5.551964}
       - {x: 10.642831, y: -5.5519643}
   m_UseDelaunayMesh: 0
+--- !u!1 &5252731
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5252732}
+  - component: {fileID: 5252734}
+  - component: {fileID: 5252733}
+  m_Layer: 3
+  m_Name: BloodMoney_Outro_119 (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5252732
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5252731}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0.7083701, w: 0.7058412}
+  m_LocalPosition: {x: 0.04, y: 5.25, z: 0}
+  m_LocalScale: {x: 1, y: 26.461626, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 872678497}
+  m_Father: {fileID: 2049243848}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.205}
+--- !u!61 &5252733
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5252731}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.25, y: 0.85}
+    newSize: {x: 0.25, y: 0.85}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.25, y: 0.85}
+  m_EdgeRadius: 0
+--- !u!212 &5252734
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5252731}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 4286987551958693318, guid: f872dc42c62c251489c54e6305c115e2, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.25, y: 0.85}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &11967480
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,6 +472,7 @@ GameObject:
   m_Component:
   - component: {fileID: 24237304}
   - component: {fileID: 24237303}
+  - component: {fileID: 24237305}
   m_Layer: 0
   m_Name: BloodMoney_Outro_244
   m_TagString: Untagged
@@ -415,6 +554,52 @@ Transform:
   - {fileID: 1785800944}
   m_Father: {fileID: 1078724069}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &24237305
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24237302}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.275, y: 0.6}
+    newSize: {x: 1.275, y: 0.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.275, y: 0.6}
+  m_EdgeRadius: 0
 --- !u!1 &29395641
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,7 +609,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29395642}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -455,7 +640,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29821385}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -488,7 +673,7 @@ GameObject:
   - component: {fileID: 49479802}
   - component: {fileID: 49479801}
   - component: {fileID: 49479803}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2898,7 +3083,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 157774139}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2931,7 +3116,7 @@ GameObject:
   - component: {fileID: 158740408}
   - component: {fileID: 158740407}
   - component: {fileID: 158740409}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3100,7 +3285,7 @@ GameObject:
   - component: {fileID: 169965381}
   - component: {fileID: 169965382}
   - component: {fileID: 169965383}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3227,37 +3412,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.25, y: 0.85}
   m_EdgeRadius: 0
---- !u!1 &175842288
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 175842289}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &175842289
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 175842288}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1893904860}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &184097850
 GameObject:
   m_ObjectHideFlags: 0
@@ -3267,7 +3421,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 184097851}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3300,7 +3454,7 @@ GameObject:
   - component: {fileID: 187579093}
   - component: {fileID: 187579092}
   - component: {fileID: 187579094}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3436,7 +3590,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 198514648}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3469,7 +3623,7 @@ GameObject:
   - component: {fileID: 212312102}
   - component: {fileID: 212312101}
   - component: {fileID: 212312103}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3698,7 +3852,7 @@ Transform:
   m_GameObject: {fileID: 217226479}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.2, y: -4.29, z: -10}
+  m_LocalPosition: {x: -0.04614363, y: -5.1463275, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3841,14 +3995,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 246354181}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.99998933, w: 0.004621248}
+  m_LocalRotation: {x: -0, y: -0, z: -0.71843857, w: 0.69559044}
   m_LocalPosition: {x: -3.3452964, y: 2.8013327, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1783315683}
   m_Father: {fileID: 1078724069}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -179.47}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -91.851}
 --- !u!50 &246354184
 Rigidbody2D:
   serializedVersion: 5
@@ -3888,14 +4042,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e520dbad293b86429f8ab0795bd5405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Systems.AI.EnemyFollowNewMethod
-  viewRadius: 0.8
-  viewAngle: 70.1
+  viewRadius: 2
+  viewAngle: 360
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   patrolSpeed: 2
   chaseSpeed: 5.5
   rotationSpeed: 5
@@ -4063,14 +4217,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280682001}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.86968184, w: 0.4936128}
   m_LocalPosition: {x: -4.8236413, y: -2.1417868, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 133091435}
   m_Father: {fileID: 1078724069}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -120.843}
 --- !u!114 &280682004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4083,14 +4237,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e520dbad293b86429f8ab0795bd5405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Systems.AI.EnemyFollowNewMethod
-  viewRadius: 0.69
-  viewAngle: 79.6
+  viewRadius: 4
+  viewAngle: 360
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   patrolSpeed: 2
   chaseSpeed: 5.5
   rotationSpeed: 5
@@ -4209,6 +4363,7 @@ GameObject:
   m_Component:
   - component: {fileID: 331282115}
   - component: {fileID: 331282114}
+  - component: {fileID: 331282116}
   m_Layer: 0
   m_Name: BloodMoney_Outro_303
   m_TagString: Untagged
@@ -4289,6 +4444,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1078724069}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &331282116
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331282113}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.35, y: 0.425}
+    newSize: {x: 0.35, y: 0.425}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.35, y: 0.425}
+  m_EdgeRadius: 0
 --- !u!1 &331690557
 GameObject:
   m_ObjectHideFlags: 0
@@ -4298,7 +4499,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 331690558}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4331,7 +4532,7 @@ GameObject:
   - component: {fileID: 332525700}
   - component: {fileID: 332525699}
   - component: {fileID: 332525701}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4467,7 +4668,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 332899481}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4498,7 +4699,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 353160895}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4520,6 +4721,96 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1275428728}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &372028229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 372028230}
+  - component: {fileID: 372028231}
+  m_Layer: 0
+  m_Name: Visual
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &372028230
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372028229}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0.01, y: -0.039, z: 0}
+  m_LocalScale: {x: 1.0274315, y: 0.82870936, z: 2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1224469784}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &372028231
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372028229}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 5122356051294880798, guid: 8c0a947b5db7cc6449574b10260f82d1, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.64, y: 1.04}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &378098820
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4529,24 +4820,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1150270342179444698, guid: 33c016697d97f864c89201499da85082, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1150270342179444698, guid: 33c016697d97f864c89201499da85082, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1150270342179444698, guid: 33c016697d97f864c89201499da85082, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1150270342179444698, guid: 33c016697d97f864c89201499da85082, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.2
+      value: -0.04614363
       objectReference: {fileID: 0}
     - target: {fileID: 1150270342179444698, guid: 33c016697d97f864c89201499da85082, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.29
+      value: -5.1463275
       objectReference: {fileID: 0}
     - target: {fileID: 1150270342179444698, guid: 33c016697d97f864c89201499da85082, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4554,19 +4833,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1150270342179444698, guid: 33c016697d97f864c89201499da85082, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0.99998915
       objectReference: {fileID: 0}
     - target: {fileID: 1150270342179444698, guid: 33c016697d97f864c89201499da85082, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1150270342179444698, guid: 33c016697d97f864c89201499da85082, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1150270342179444698, guid: 33c016697d97f864c89201499da85082, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.7071068
+      value: -0.0046592597
       objectReference: {fileID: 0}
     - target: {fileID: 1150270342179444698, guid: 33c016697d97f864c89201499da85082, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4578,25 +4857,68 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1150270342179444698, guid: 33c016697d97f864c89201499da85082, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -90
+      value: -0.534
       objectReference: {fileID: 0}
+    - target: {fileID: 1352283374526842358, guid: 33c016697d97f864c89201499da85082, type: 3}
+      propertyPath: visual
+      value: 
+      objectReference: {fileID: 372028230}
     - target: {fileID: 1540256861079766687, guid: 33c016697d97f864c89201499da85082, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2220991819703039771, guid: 33c016697d97f864c89201499da85082, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.016
+      objectReference: {fileID: 0}
+    - target: {fileID: 2220991819703039771, guid: 33c016697d97f864c89201499da85082, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.928
+      objectReference: {fileID: 0}
     - target: {fileID: 4915294264904069623, guid: 33c016697d97f864c89201499da85082, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5558653332052266577, guid: 33c016697d97f864c89201499da85082, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7585973854306033789, guid: 33c016697d97f864c89201499da85082, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7585973854306033789, guid: 33c016697d97f864c89201499da85082, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.007
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468743066860671676, guid: 33c016697d97f864c89201499da85082, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.39997488
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468743066860671676, guid: 33c016697d97f864c89201499da85082, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.33382493
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468743066860671676, guid: 33c016697d97f864c89201499da85082, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.011
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468743066860671676, guid: 33c016697d97f864c89201499da85082, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.665
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477853520357790946, guid: 33c016697d97f864c89201499da85082, type: 3}
+      propertyPath: m_Constraints
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 2953656674361406086, guid: 33c016697d97f864c89201499da85082, type: 3}
-    - {fileID: 6903845160092776012, guid: 33c016697d97f864c89201499da85082, type: 3}
+    - {fileID: 2947447981756731415, guid: 33c016697d97f864c89201499da85082, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1540256861079766687, guid: 33c016697d97f864c89201499da85082, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1150270342179444698, guid: 33c016697d97f864c89201499da85082, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1224469786}
+      addedObject: {fileID: 372028230}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33c016697d97f864c89201499da85082, type: 3}
 --- !u!1 &390310791
 GameObject:
@@ -4607,7 +4929,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 390310792}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4640,7 +4962,7 @@ GameObject:
   - component: {fileID: 394232737}
   - component: {fileID: 394232736}
   - component: {fileID: 394232738}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4767,6 +5089,144 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.25, y: 0.85}
   m_EdgeRadius: 0
+--- !u!1 &398530672
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 398530673}
+  - component: {fileID: 398530675}
+  - component: {fileID: 398530674}
+  m_Layer: 3
+  m_Name: BloodMoney_Outro_119 (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &398530673
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398530672}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0.7083701, w: 0.7058412}
+  m_LocalPosition: {x: -7.2349, y: -5.1828, z: 0}
+  m_LocalScale: {x: 1, y: 8.753269, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1627577671}
+  m_Father: {fileID: 2049243848}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.205}
+--- !u!61 &398530674
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398530672}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.25, y: 0.85}
+    newSize: {x: 0.25, y: 0.85}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.25, y: 0.85}
+  m_EdgeRadius: 0
+--- !u!212 &398530675
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398530672}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 4286987551958693318, guid: f872dc42c62c251489c54e6305c115e2, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.25, y: 0.85}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &411803219
 GameObject:
   m_ObjectHideFlags: 0
@@ -4778,7 +5238,7 @@ GameObject:
   - component: {fileID: 411803221}
   - component: {fileID: 411803220}
   - component: {fileID: 411803222}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4916,7 +5376,7 @@ GameObject:
   - component: {fileID: 441248067}
   - component: {fileID: 441248066}
   - component: {fileID: 441248068}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5052,7 +5512,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 455944653}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5085,7 +5545,7 @@ GameObject:
   - component: {fileID: 465007970}
   - component: {fileID: 465007969}
   - component: {fileID: 465007971}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5223,7 +5683,7 @@ GameObject:
   - component: {fileID: 466861006}
   - component: {fileID: 466861005}
   - component: {fileID: 466861007}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5359,7 +5819,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 468800735}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5422,6 +5882,7 @@ GameObject:
   m_Component:
   - component: {fileID: 478979193}
   - component: {fileID: 478979192}
+  - component: {fileID: 478979194}
   m_Layer: 0
   m_Name: BloodMoney_Outro_102
   m_TagString: Untagged
@@ -5503,6 +5964,52 @@ Transform:
   - {fileID: 167867500}
   m_Father: {fileID: 1078724069}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.183}
+--- !u!61 &478979194
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478979191}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.65, y: 0.65}
+    newSize: {x: 1.65, y: 0.65}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.65, y: 0.65}
+  m_EdgeRadius: 0
 --- !u!1 &515163744
 GameObject:
   m_ObjectHideFlags: 0
@@ -5545,7 +6052,7 @@ GameObject:
   - component: {fileID: 520461080}
   - component: {fileID: 520461079}
   - component: {fileID: 520461081}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5789,14 +6296,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 542187434}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.6365986, w: 0.7711954}
   m_LocalPosition: {x: -4.791458, y: 0.12111354, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 11967481}
   m_Father: {fileID: 1078724069}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -79.077}
 --- !u!50 &542187437
 Rigidbody2D:
   serializedVersion: 5
@@ -5836,14 +6343,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e520dbad293b86429f8ab0795bd5405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Systems.AI.EnemyFollowNewMethod
-  viewRadius: 0.8
-  viewAngle: 70.1
+  viewRadius: 2
+  viewAngle: 360
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   patrolSpeed: 2
   chaseSpeed: 5.5
   rotationSpeed: 5
@@ -5863,6 +6370,144 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyFollow
   speed: 3
   gravedadArtificial: 0
+--- !u!1 &544217792
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 544217795}
+  - component: {fileID: 544217794}
+  - component: {fileID: 544217793}
+  m_Layer: 3
+  m_Name: BloodMoney_Outro_119 (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &544217793
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544217792}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.25, y: 0.85}
+    newSize: {x: 0.25, y: 0.85}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.25, y: 0.85}
+  m_EdgeRadius: 0
+--- !u!212 &544217794
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544217792}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 4286987551958693318, guid: f872dc42c62c251489c54e6305c115e2, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.25, y: 0.85}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &544217795
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544217792}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0.99999195, w: -0.004032738}
+  m_LocalPosition: {x: 10.39, y: -0.03, z: 0}
+  m_LocalScale: {x: 1, y: 13.106208, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1347170937}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180.462}
 --- !u!1 &548453946
 GameObject:
   m_ObjectHideFlags: 0
@@ -5872,7 +6517,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 548453947}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5903,7 +6548,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 559017661}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5936,7 +6581,7 @@ GameObject:
   - component: {fileID: 559199756}
   - component: {fileID: 559199755}
   - component: {fileID: 559199757}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6074,7 +6719,7 @@ GameObject:
   - component: {fileID: 572699846}
   - component: {fileID: 572699845}
   - component: {fileID: 572699847}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6378,14 +7023,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605305556}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.7038631, w: 0.7103357}
+  m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
   m_LocalPosition: {x: -17.090158, y: 1.09427, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 930375164}
   m_Father: {fileID: 1078724069}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -89.476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
 --- !u!114 &605305559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6398,14 +7043,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e520dbad293b86429f8ab0795bd5405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Systems.AI.EnemyFollowNewMethod
-  viewRadius: 0.81
-  viewAngle: 44.3
+  viewRadius: 3
+  viewAngle: 360
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   patrolSpeed: 2
   chaseSpeed: 5.5
   rotationSpeed: 5
@@ -6538,14 +7183,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 621833668}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.9967444, w: 0.08062681}
+  m_LocalRotation: {x: -0, y: -0, z: -0.8862639, w: -0.46318066}
   m_LocalPosition: {x: -10.316371, y: -0.64823484, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 157636037}
   m_Father: {fileID: 1078724069}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -170.751}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -235.185}
 --- !u!114 &621833671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6558,14 +7203,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e520dbad293b86429f8ab0795bd5405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Systems.AI.EnemyFollowNewMethod
-  viewRadius: 0.59
-  viewAngle: 63.9
+  viewRadius: 2
+  viewAngle: 360
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   patrolSpeed: 2
   chaseSpeed: 5.5
   rotationSpeed: 5
@@ -6654,7 +7299,7 @@ GameObject:
   - component: {fileID: 625060570}
   - component: {fileID: 625060569}
   - component: {fileID: 625060571}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6790,7 +7435,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 647191203}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6822,6 +7467,7 @@ GameObject:
   m_Component:
   - component: {fileID: 651258562}
   - component: {fileID: 651258561}
+  - component: {fileID: 651258563}
   m_Layer: 0
   m_Name: BloodMoney_Outro_218
   m_TagString: Untagged
@@ -6903,6 +7549,52 @@ Transform:
   - {fileID: 1538454580}
   m_Father: {fileID: 1078724069}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &651258563
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 651258560}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.3, y: 0.8}
+    newSize: {x: 1.3, y: 0.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.3, y: 0.8}
+  m_EdgeRadius: 0
 --- !u!1 &658170401
 GameObject:
   m_ObjectHideFlags: 0
@@ -6912,7 +7604,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 658170402}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6944,6 +7636,7 @@ GameObject:
   m_Component:
   - component: {fileID: 658215745}
   - component: {fileID: 658215744}
+  - component: {fileID: 658215746}
   m_Layer: 0
   m_Name: BloodMoney_Outro_51
   m_TagString: Untagged
@@ -7025,68 +7718,52 @@ Transform:
   - {fileID: 712368325}
   m_Father: {fileID: 1078724069}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.079}
---- !u!1 &665683542
-GameObject:
+--- !u!61 &658215746
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 665683543}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &665683543
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 665683542}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1068323439}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &697415609
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 697415610}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &697415610
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 697415609}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1782143265}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 658215743}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.65, y: 0.8}
+    newSize: {x: 0.65, y: 0.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.65, y: 0.8}
+  m_EdgeRadius: 0
 --- !u!1 &712368324
 GameObject:
   m_ObjectHideFlags: 0
@@ -7118,11 +7795,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 658215745}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &723910608 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1540256861079766687, guid: 33c016697d97f864c89201499da85082, type: 3}
-  m_PrefabInstance: {fileID: 378098820}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &746114542
 GameObject:
   m_ObjectHideFlags: 0
@@ -7132,7 +7804,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 746114543}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7163,7 +7835,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 759003373}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7195,6 +7867,7 @@ GameObject:
   m_Component:
   - component: {fileID: 779167258}
   - component: {fileID: 779167257}
+  - component: {fileID: 779167259}
   m_Layer: 0
   m_Name: BloodMoney_Outro_295
   m_TagString: Untagged
@@ -7276,6 +7949,52 @@ Transform:
   - {fileID: 126052891}
   m_Father: {fileID: 1078724069}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &779167259
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779167256}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.425, y: 0.5}
+    newSize: {x: 0.425, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.425, y: 0.5}
+  m_EdgeRadius: 0
 --- !u!1 &802988317
 GameObject:
   m_ObjectHideFlags: 0
@@ -7316,7 +8035,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 821030034}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7378,7 +8097,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 840574543}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7440,7 +8159,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 847353015}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7548,14 +8267,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 849192507}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.70886284, w: 0.70534647}
+  m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
   m_LocalPosition: {x: -12.644152, y: 1.1154416, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 288125458}
   m_Father: {fileID: 1078724069}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.285}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
 --- !u!114 &849192510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7568,14 +8287,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e520dbad293b86429f8ab0795bd5405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Systems.AI.EnemyFollowNewMethod
-  viewRadius: 0.81
-  viewAngle: 44.3
+  viewRadius: 3
+  viewAngle: 360
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   patrolSpeed: 2
   chaseSpeed: 5.5
   rotationSpeed: 5
@@ -7631,7 +8350,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 851860676}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7653,6 +8372,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1809970198}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &872678496
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 872678497}
+  m_Layer: 3
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &872678497
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872678496}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5252732}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &910774961
 GameObject:
   m_ObjectHideFlags: 0
@@ -7664,7 +8414,7 @@ GameObject:
   - component: {fileID: 910774963}
   - component: {fileID: 910774962}
   - component: {fileID: 910774964}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7822,97 +8572,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 605305558}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1013766389
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1013766391}
-  - component: {fileID: 1013766390}
-  m_Layer: 0
-  m_Name: BloodMoney_Outro_352 (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1013766390
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1013766389}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -5940242135081494128, guid: f872dc42c62c251489c54e6305c115e2, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1.25, y: 0.45}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1013766391
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1013766389}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.736371, y: -4.848235, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1287829236}
-  m_Father: {fileID: 1078724069}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1055156746
 GameObject:
   m_ObjectHideFlags: 0
@@ -7924,7 +8583,7 @@ GameObject:
   - component: {fileID: 1055156748}
   - component: {fileID: 1055156747}
   - component: {fileID: 1055156749}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8137,14 +8796,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1060153638}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.7281078, w: 0.6854627}
+  m_LocalRotation: {x: -0, y: -0, z: 0.13920583, w: 0.9902635}
   m_LocalPosition: {x: -0.17049074, y: -5.531499, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1443340401}
   m_Father: {fileID: 1078724069}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 93.456}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 16.004}
 --- !u!114 &1060153641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8157,14 +8816,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e520dbad293b86429f8ab0795bd5405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Systems.AI.EnemyFollowNewMethod
-  viewRadius: 0.69
-  viewAngle: 79.6
+  viewRadius: 4
+  viewAngle: 360
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   patrolSpeed: 2
   chaseSpeed: 5.5
   rotationSpeed: 5
@@ -8211,97 +8870,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyFollow
   speed: 3
   gravedadArtificial: 0
---- !u!1 &1068323437
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1068323439}
-  - component: {fileID: 1068323438}
-  m_Layer: 0
-  m_Name: BloodMoney_Outro_352 (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1068323438
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1068323437}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -5940242135081494128, guid: f872dc42c62c251489c54e6305c115e2, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1.25, y: 0.45}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1068323439
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1068323437}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0936294, y: -4.848235, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 665683543}
-  m_Father: {fileID: 1078724069}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1078724068
 GameObject:
   m_ObjectHideFlags: 0
@@ -8350,8 +8918,6 @@ Transform:
   - {fileID: 1993698622}
   - {fileID: 1809970198}
   - {fileID: 910774963}
-  - {fileID: 1782143265}
-  - {fileID: 1893904860}
   - {fileID: 1885602828}
   - {fileID: 621833670}
   - {fileID: 1937506011}
@@ -8393,9 +8959,6 @@ Transform:
   - {fileID: 1452080371}
   - {fileID: 2101735456}
   - {fileID: 1448177276}
-  - {fileID: 1372991956}
-  - {fileID: 1013766391}
-  - {fileID: 1068323439}
   - {fileID: 280682003}
   - {fileID: 2131749461}
   - {fileID: 1060153640}
@@ -8411,7 +8974,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1099983357}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8444,7 +9007,7 @@ GameObject:
   - component: {fileID: 1100276278}
   - component: {fileID: 1100276277}
   - component: {fileID: 1100276279}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8613,7 +9176,7 @@ GameObject:
   - component: {fileID: 1141654584}
   - component: {fileID: 1141654585}
   - component: {fileID: 1141654586}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8749,7 +9312,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1173996081}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8857,14 +9420,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1201694628}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.70953155, w: 0.7046737}
+  m_LocalRotation: {x: -0, y: -0, z: -0.99990016, w: 0.014134736}
   m_LocalPosition: {x: -7.673216, y: -0.39480639, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 252608960}
   m_Father: {fileID: 1078724069}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.394}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -178.38}
 --- !u!50 &1201694631
 Rigidbody2D:
   serializedVersion: 5
@@ -8904,14 +9467,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e520dbad293b86429f8ab0795bd5405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Systems.AI.EnemyFollowNewMethod
-  viewRadius: 0.8
-  viewAngle: 70.1
+  viewRadius: 2
+  viewAngle: 360
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   patrolSpeed: 2
   chaseSpeed: 5.5
   rotationSpeed: 5
@@ -8942,7 +9505,7 @@ GameObject:
   - component: {fileID: 1209671991}
   - component: {fileID: 1209671990}
   - component: {fileID: 1209671992}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9165,64 +9728,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1150270342179444698, guid: 33c016697d97f864c89201499da85082, type: 3}
   m_PrefabInstance: {fileID: 378098820}
   m_PrefabAsset: {fileID: 0}
---- !u!212 &1224469786
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 723910608}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8805334176117687470, guid: 8c0a947b5db7cc6449574b10260f82d1, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.15, y: 0.26}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1234511060
 GameObject:
   m_ObjectHideFlags: 0
@@ -9234,7 +9739,7 @@ GameObject:
   - component: {fileID: 1234511062}
   - component: {fileID: 1234511061}
   - component: {fileID: 1234511063}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9372,7 +9877,7 @@ GameObject:
   - component: {fileID: 1253185576}
   - component: {fileID: 1253185575}
   - component: {fileID: 1253185577}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9510,7 +10015,7 @@ GameObject:
   - component: {fileID: 1275428728}
   - component: {fileID: 1275428727}
   - component: {fileID: 1275428729}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9637,37 +10142,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.25, y: 0.85}
   m_EdgeRadius: 0
---- !u!1 &1287829235
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1287829236}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1287829236
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1287829235}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1013766391}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1335067818
 GameObject:
   m_ObjectHideFlags: 0
@@ -9679,7 +10153,7 @@ GameObject:
   - component: {fileID: 1335067820}
   - component: {fileID: 1335067819}
   - component: {fileID: 1335067821}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9806,7 +10280,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.25, y: 0.85}
   m_EdgeRadius: 0
---- !u!1 &1336871491
+--- !u!1 &1335427397
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9814,53 +10288,69 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1336871492}
-  m_Layer: 0
-  m_Name: GameObject
+  - component: {fileID: 1335427400}
+  - component: {fileID: 1335427399}
+  - component: {fileID: 1335427398}
+  m_Layer: 3
+  m_Name: BloodMoney_Outro_119 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1336871492
-Transform:
+--- !u!61 &1335427398
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1336871491}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 601731429}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1372991954
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1372991956}
-  - component: {fileID: 1372991955}
-  m_Layer: 0
-  m_Name: BloodMoney_Outro_352 (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1372991955
+  m_GameObject: {fileID: 1335427397}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.25, y: 0.85}
+    newSize: {x: 0.25, y: 0.85}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.25, y: 0.85}
+  m_EdgeRadius: 0
+--- !u!212 &1335427399
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1372991954}
+  m_GameObject: {fileID: 1335427397}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -9901,32 +10391,94 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5940242135081494128, guid: f872dc42c62c251489c54e6305c115e2, type: 3}
+  m_Sprite: {fileID: 4286987551958693318, guid: f872dc42c62c251489c54e6305c115e2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.25, y: 0.45}
+  m_Size: {x: 0.25, y: 0.85}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &1372991956
+--- !u!4 &1335427400
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1372991954}
+  m_GameObject: {fileID: 1335427397}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.336371, y: -3.088235, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7083701, w: 0.7058412}
+  m_LocalPosition: {x: 6.64, y: -5.23, z: 0}
+  m_LocalScale: {x: 1, y: 9.628597, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1858257021}
-  m_Father: {fileID: 1078724069}
+  - {fileID: 2074529324}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.205}
+--- !u!1 &1336871491
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1336871492}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1336871492
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336871491}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 601731429}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1347170936
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1347170937}
+  m_Layer: 3
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1347170937
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1347170936}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 544217795}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1376134040
 GameObject:
@@ -10016,14 +10568,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1376134040}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.016434005, w: -0.999865}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -10.8581, y: -5.9299, z: 0}
   m_LocalScale: {x: 0.9927, y: 1.0298, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1653760806}
   m_Father: {fileID: 1078724069}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.883}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!114 &1376134043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10110,14 +10662,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e520dbad293b86429f8ab0795bd5405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Systems.AI.EnemyFollowNewMethod
-  viewRadius: 0.62
-  viewAngle: 44.9
+  viewRadius: 1
+  viewAngle: 360
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   patrolSpeed: 2
   chaseSpeed: 5.5
   rotationSpeed: 5
@@ -10389,14 +10941,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452080369}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.99998933, w: 0.004621248}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7429718, w: -0.6693228}
   m_LocalPosition: {x: 1.3036294, y: 2.8217652, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 229034906}
   m_Father: {fileID: 1078724069}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -179.47}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -264.03}
 --- !u!114 &1452080372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10409,14 +10961,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e520dbad293b86429f8ab0795bd5405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Systems.AI.EnemyFollowNewMethod
-  viewRadius: 0.91
-  viewAngle: 54.8
+  viewRadius: 2
+  viewAngle: 360
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   patrolSpeed: 2
   chaseSpeed: 5.5
   rotationSpeed: 5
@@ -10582,7 +11134,7 @@ Transform:
   m_GameObject: {fileID: 1554612029}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.4805064, y: -3.05196, z: -10}
+  m_LocalPosition: {x: -0.046140682, y: -3.05196, z: -10}
   m_LocalScale: {x: 0.5000001, y: 0.5000001, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10664,6 +11216,144 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   CustomBlends: {fileID: 0}
+--- !u!1 &1575173244
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1575173247}
+  - component: {fileID: 1575173246}
+  - component: {fileID: 1575173245}
+  m_Layer: 3
+  m_Name: BloodMoney_Outro_119 (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1575173245
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575173244}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.25, y: 0.85}
+    newSize: {x: 0.25, y: 0.85}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.25, y: 0.85}
+  m_EdgeRadius: 0
+--- !u!212 &1575173246
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575173244}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 4286987551958693318, guid: f872dc42c62c251489c54e6305c115e2, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.25, y: 0.85}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1575173247
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575173244}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0.99999195, w: -0.004032738}
+  m_LocalPosition: {x: -10.39, y: 0.14, z: 0}
+  m_LocalScale: {x: 1, y: 13.106208, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1972168517}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180.462}
 --- !u!1 &1592386276
 GameObject:
   m_ObjectHideFlags: 0
@@ -10673,7 +11363,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1592386277}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10781,14 +11471,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1613800068}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7951538, w: 0.60640794}
   m_LocalPosition: {x: -4.81074, y: 1.2394783, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 299481033}
   m_Father: {fileID: 1078724069}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -105.34}
 --- !u!50 &1613800071
 Rigidbody2D:
   serializedVersion: 5
@@ -10828,14 +11518,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e520dbad293b86429f8ab0795bd5405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Systems.AI.EnemyFollowNewMethod
-  viewRadius: 0.8
-  viewAngle: 70.1
+  viewRadius: 2
+  viewAngle: 360
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   patrolSpeed: 2
   chaseSpeed: 5.5
   rotationSpeed: 5
@@ -10865,6 +11555,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1624583394}
   - component: {fileID: 1624583393}
+  - component: {fileID: 1624583395}
   m_Layer: 0
   m_Name: BloodMoney_Outro_201
   m_TagString: Untagged
@@ -10946,6 +11637,83 @@ Transform:
   - {fileID: 1656749573}
   m_Father: {fileID: 1078724069}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1624583395
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624583392}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.475, y: 0.6}
+    newSize: {x: 1.475, y: 0.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.475, y: 0.6}
+  m_EdgeRadius: 0
+--- !u!1 &1627577670
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1627577671}
+  m_Layer: 3
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1627577671
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627577670}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 398530673}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1636999123
 GameObject:
   m_ObjectHideFlags: 0
@@ -10955,7 +11723,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1636999124}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10986,7 +11754,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1643220425}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11019,7 +11787,7 @@ GameObject:
   - component: {fileID: 1648503248}
   - component: {fileID: 1648503247}
   - component: {fileID: 1648503249}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11187,6 +11955,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1655271695}
   - component: {fileID: 1655271694}
+  - component: {fileID: 1655271696}
   m_Layer: 0
   m_Name: BloodMoney_Outro_24
   m_TagString: Untagged
@@ -11268,6 +12037,52 @@ Transform:
   - {fileID: 802988318}
   m_Father: {fileID: 1078724069}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1655271696
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655271693}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.8, y: 0.625}
+    newSize: {x: 0.8, y: 0.625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.8, y: 0.625}
+  m_EdgeRadius: 0
 --- !u!1 &1656749572
 GameObject:
   m_ObjectHideFlags: 0
@@ -11310,7 +12125,7 @@ GameObject:
   - component: {fileID: 1660747035}
   - component: {fileID: 1660747034}
   - component: {fileID: 1660747036}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11523,14 +12338,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1685546942}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.70674837, w: 0.7074651}
+  m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
   m_LocalPosition: {x: -14.867155, y: 2.4492438, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 845456461}
   m_Father: {fileID: 1078724069}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -89.942}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
 --- !u!114 &1685546945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11543,14 +12358,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e520dbad293b86429f8ab0795bd5405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Systems.AI.EnemyFollowNewMethod
-  viewRadius: 0.81
-  viewAngle: 44.3
+  viewRadius: 4
+  viewAngle: 360
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   patrolSpeed: 2
   chaseSpeed: 5.5
   rotationSpeed: 5
@@ -11606,7 +12421,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1738045120}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11639,7 +12454,7 @@ GameObject:
   - component: {fileID: 1760340967}
   - component: {fileID: 1760340966}
   - component: {fileID: 1760340968}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11766,97 +12581,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.25, y: 0.85}
   m_EdgeRadius: 0
---- !u!1 &1782143263
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1782143265}
-  - component: {fileID: 1782143264}
-  m_Layer: 0
-  m_Name: BloodMoney_Outro_352
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1782143264
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1782143263}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -5940242135081494128, guid: f872dc42c62c251489c54e6305c115e2, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1.25, y: 0.45}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1782143265
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1782143263}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.126371, y: -1.7582349, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 697415610}
-  m_Father: {fileID: 1078724069}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1783315682
 GameObject:
   m_ObjectHideFlags: 0
@@ -12005,14 +12729,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1787512231}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.94626325, w: 0.3233974}
+  m_LocalRotation: {x: -0, y: -0, z: -0.82910043, w: -0.55909973}
   m_LocalPosition: {x: -5.838025, y: 3.2205164, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 470817472}
   m_Father: {fileID: 1078724069}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -142.263}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -247.987}
 --- !u!114 &1787512234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12025,14 +12749,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e520dbad293b86429f8ab0795bd5405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Systems.AI.EnemyFollowNewMethod
-  viewRadius: 0.83
-  viewAngle: 54.5
+  viewRadius: 3
+  viewAngle: 360
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   patrolSpeed: 2
   chaseSpeed: 5.5
   rotationSpeed: 5
@@ -12090,7 +12814,7 @@ GameObject:
   - component: {fileID: 1809970198}
   - component: {fileID: 1809970197}
   - component: {fileID: 1809970199}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12217,37 +12941,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.25, y: 0.85}
   m_EdgeRadius: 0
---- !u!1 &1858257020
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1858257021}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1858257021
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1858257020}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1372991956}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1885602826
 GameObject:
   m_ObjectHideFlags: 0
@@ -12334,14 +13027,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1885602826}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.97769743, w: -0.21001865}
-  m_LocalPosition: {x: -10.33637, y: -1.7782348, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.38449833, w: -0.92312574}
+  m_LocalPosition: {x: -10.346, y: -2.016, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 515163745}
   m_Father: {fileID: 1078724069}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -204.247}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -314.775}
 --- !u!114 &1885602829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12354,14 +13047,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e520dbad293b86429f8ab0795bd5405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Systems.AI.EnemyFollowNewMethod
-  viewRadius: 0.59
-  viewAngle: 63.9
+  viewRadius: 2
+  viewAngle: 360
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   patrolSpeed: 2
   chaseSpeed: 5.5
   rotationSpeed: 5
@@ -12417,7 +13110,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1889326228}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12439,97 +13132,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2003264246}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1893904858
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1893904860}
-  - component: {fileID: 1893904859}
-  m_Layer: 0
-  m_Name: BloodMoney_Outro_352 (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1893904859
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1893904858}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -5940242135081494128, guid: f872dc42c62c251489c54e6305c115e2, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1.25, y: 0.45}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1893904860
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1893904858}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.728161, y: -1.7964389, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 175842289}
-  m_Father: {fileID: 1078724069}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1914641104
 GameObject:
   m_ObjectHideFlags: 0
@@ -12539,7 +13141,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1914641105}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12572,7 +13174,7 @@ GameObject:
   - component: {fileID: 1926031115}
   - component: {fileID: 1926031114}
   - component: {fileID: 1926031116}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12785,14 +13387,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1937506009}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -17.91637, y: -2.8682349, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2066422859}
   m_Father: {fileID: 1078724069}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!114 &1937506012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12805,14 +13407,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e520dbad293b86429f8ab0795bd5405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Systems.AI.EnemyFollowNewMethod
-  viewRadius: 0.53
-  viewAngle: 73
+  viewRadius: 3
+  viewAngle: 360
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   patrolSpeed: 2
   chaseSpeed: 5.5
   rotationSpeed: 5
@@ -12868,7 +13470,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1960731173}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12899,7 +13501,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1964981106}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12921,6 +13523,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1209671991}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1972168516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1972168517}
+  m_Layer: 3
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1972168517
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972168516}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1575173247}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1993698620
 GameObject:
   m_ObjectHideFlags: 0
@@ -12932,7 +13565,7 @@ GameObject:
   - component: {fileID: 1993698622}
   - component: {fileID: 1993698621}
   - component: {fileID: 1993698623}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13070,7 +13703,7 @@ GameObject:
   - component: {fileID: 1994766606}
   - component: {fileID: 1994766605}
   - component: {fileID: 1994766607}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13208,7 +13841,7 @@ GameObject:
   - component: {fileID: 2003264246}
   - component: {fileID: 2003264245}
   - component: {fileID: 2003264247}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13345,6 +13978,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2006290026}
   - component: {fileID: 2006290025}
+  - component: {fileID: 2006290027}
   m_Layer: 0
   m_Name: BloodMoney_Outro_348
   m_TagString: Untagged
@@ -13426,6 +14060,52 @@ Transform:
   - {fileID: 119737978}
   m_Father: {fileID: 1078724069}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2006290027
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006290024}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.775, y: 0.475}
+    newSize: {x: 0.775, y: 0.475}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.775, y: 0.475}
+  m_EdgeRadius: 0
 --- !u!1 &2030769617
 GameObject:
   m_ObjectHideFlags: 0
@@ -13512,14 +14192,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030769617}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.71219784, w: 0.7019788}
+  m_LocalRotation: {x: -0, y: -0, z: -0.008505761, w: 0.9999638}
   m_LocalPosition: {x: -6.0772443, y: -2.8176064, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 831815885}
   m_Father: {fileID: 1078724069}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.828}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.975}
 --- !u!50 &2030769620
 Rigidbody2D:
   serializedVersion: 5
@@ -13559,14 +14239,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e520dbad293b86429f8ab0795bd5405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Systems.AI.EnemyFollowNewMethod
-  viewRadius: 0.76
-  viewAngle: 70.1
+  viewRadius: 2
+  viewAngle: 360
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   patrolSpeed: 2
   chaseSpeed: 5.5
   rotationSpeed: 5
@@ -13629,6 +14309,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 141331722}
+  - {fileID: 5252732}
+  - {fileID: 398530673}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2066422858
@@ -13662,6 +14344,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1937506011}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2074529323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2074529324}
+  m_Layer: 3
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2074529324
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074529323}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1335427400}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2076842415
 GameObject:
   m_ObjectHideFlags: 0
@@ -13673,7 +14386,7 @@ GameObject:
   - component: {fileID: 2076842417}
   - component: {fileID: 2076842416}
   - component: {fileID: 2076842418}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BloodMoney_Outro_119 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13810,6 +14523,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2101735456}
   - component: {fileID: 2101735455}
+  - component: {fileID: 2101735457}
   m_Layer: 0
   m_Name: BloodMoney_Outro_25
   m_TagString: Untagged
@@ -13891,6 +14605,52 @@ Transform:
   - {fileID: 1409981126}
   m_Father: {fileID: 1078724069}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2101735457
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101735454}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.65, y: 0.625}
+    newSize: {x: 1.65, y: 0.625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.65, y: 0.625}
+  m_EdgeRadius: 0
 --- !u!1 &2112514729
 GameObject:
   m_ObjectHideFlags: 0
@@ -13900,7 +14660,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2112514730}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13931,7 +14691,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2128418143}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14039,14 +14799,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2131749459}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.70609784, w: 0.7081143}
-  m_LocalPosition: {x: -1.4031134, y: -3.9290895, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.00024358256, w: 1}
+  m_LocalPosition: {x: -1.4, y: -4.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1112284635}
   m_Father: {fileID: 1078724069}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 89.837}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.028}
 --- !u!114 &2131749462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14059,14 +14819,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e520dbad293b86429f8ab0795bd5405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Systems.AI.EnemyFollowNewMethod
-  viewRadius: 0.69
-  viewAngle: 79.6
+  viewRadius: 3
+  viewAngle: 360
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   patrolSpeed: 2
   chaseSpeed: 5.5
   rotationSpeed: 5
@@ -14123,3 +14883,6 @@ SceneRoots:
   - {fileID: 1554612032}
   - {fileID: 217226482}
   - {fileID: 4358666}
+  - {fileID: 1575173247}
+  - {fileID: 1335427400}
+  - {fileID: 544217795}
