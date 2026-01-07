@@ -4206,6 +4206,8 @@ GameObject:
   - component: {fileID: 280682006}
   - component: {fileID: 280682005}
   - component: {fileID: 280682004}
+  - component: {fileID: 280682008}
+  - component: {fileID: 280682007}
   m_Layer: 6
   m_Name: BloodMoney_Outro_10 (1)
   m_TagString: Enemy
@@ -4353,6 +4355,66 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyFollow
   speed: 3
   gravedadArtificial: 0
+--- !u!114 &280682007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280682001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ba08d46546a0ee469d577c26dcd4adc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Enemy
+  health: 100
+  damage: 35
+--- !u!61 &280682008
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280682001}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.5, y: 0.65}
+    newSize: {x: 0.5, y: 0.65}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.5, y: 0.65}
+  m_EdgeRadius: 0
 --- !u!1 &288125457
 GameObject:
   m_ObjectHideFlags: 0
@@ -4928,10 +4990,6 @@ PrefabInstance:
     - target: {fileID: 1540256861079766687, guid: 33c016697d97f864c89201499da85082, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 1634363357582107999, guid: 33c016697d97f864c89201499da85082, type: 3}
-      propertyPath: damage
-      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 2220991819703039771, guid: 33c016697d97f864c89201499da85082, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11671,6 +11729,7 @@ GameObject:
   - component: {fileID: 1376134043}
   - component: {fileID: 1376134047}
   - component: {fileID: 1376134046}
+  - component: {fileID: 1376134048}
   m_Layer: 6
   m_Name: BloodMoney_Outro_246
   m_TagString: Enemy
@@ -11878,6 +11937,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1376134048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376134040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75377b4f970c926459024a849b9a051a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Randomizer
+  powerUps:
+  - {fileID: 1216448920}
+  - {fileID: 5826183929550256246, guid: 59a0cfdc46bf8d4408895853fb06d19a, type: 3}
+  - {fileID: 5826183929550256246, guid: 06b2c856f9f2b5e4fb2d853230d41836, type: 3}
+  dropChance: 1
 --- !u!1 &1409981125
 GameObject:
   m_ObjectHideFlags: 0

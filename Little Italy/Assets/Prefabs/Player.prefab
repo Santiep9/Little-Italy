@@ -46,13 +46,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7472eb9c54d24ca438debb83cc7cc9b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ConoShotgun
-  layerMask:
+  layerObstaculosYEnemigos:
     serializedVersion: 2
-    m_Bits: 8
-  layerEnemigos:
-    serializedVersion: 2
-    m_Bits: 64
-  damage: 25
+    m_Bits: 72
+  damage: 35
 --- !u!33 &6015382913223797694
 MeshFilter:
   m_ObjectHideFlags: 0

@@ -6,8 +6,8 @@ using UnityEngine.UIElements;
 
 public class ConoShotgun : MonoBehaviour
 {
-    [SerializeField] private LayerMask layerMask;
-    [SerializeField] private LayerMask layerEnemigos;
+    [SerializeField] private LayerMask layerObstaculosYEnemigos;
+
     private Mesh mesh;
     private Vector3 origin;
     private float startingAngle;
@@ -26,6 +26,8 @@ public class ConoShotgun : MonoBehaviour
         fov = 90f; //esto es el cono basicamente
         meshRenderer = GetComponent<MeshRenderer>();
         meshRenderer.enabled = false;
+
+        meshRenderer.material.color = Color.red;
     }
 
     private void FixedUpdate()
@@ -33,7 +35,7 @@ public class ConoShotgun : MonoBehaviour
         int rayCount = 50;
         float angle = startingAngle;
         float angleAumento = fov / rayCount;
-        float viewDistance = 5f;
+        float viewDistance = 2f;
 
         Vector3[] vertices = new Vector3[rayCount + 1 + 1];
         Vector2[] uv = new Vector2[vertices.Length];
@@ -51,8 +53,7 @@ public class ConoShotgun : MonoBehaviour
         for (int i = 0; i <= rayCount; i++)
         {
             Vector3 dirWorld = GetVectorFromAngle(angle);
-            RaycastHit2D raycastHit2D = Physics2D.Raycast(origin, dirWorld, viewDistance, layerMask);
-            RaycastHit2D raycastHit2DEnemy = Physics2D.Raycast(origin, dirWorld, viewDistance, layerEnemigos);
+            RaycastHit2D raycastHit2D = Physics2D.Raycast(origin, dirWorld, viewDistance, layerObstaculosYEnemigos);
 
             Vector3 hitWorldPos;
 
@@ -70,9 +71,9 @@ public class ConoShotgun : MonoBehaviour
             Vector3 vertexLocal = transform.InverseTransformPoint(hitWorldPos);
             vertices[verticeIndex] = vertexLocal;
 
-            if (applyDamage && raycastHit2DEnemy.collider != null)
+            if (applyDamage && raycastHit2D.collider != null)
             {
-                Enemy enemy = raycastHit2DEnemy.collider.GetComponent<Enemy>();
+                Enemy enemy = raycastHit2D.collider.GetComponent<Enemy>();
                 if (enemy != null && !enemiesHitThisShot.Contains(enemy))
                 {
                     enemy.TakeDamage(damage);
