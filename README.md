@@ -1,4 +1,4 @@
-Movimiento del Personaje 
+# Movimiento del Personaje 
 
     El personaje se mueve en ambos ejes
 
@@ -9,7 +9,7 @@ Movimiento del Personaje
 
 
 
-Armas y disparo 
+# Armas y disparo 
 
     Encontramos diferentes tipos de disparo con los que segun el arma que tengamos, 
     el tag de la bala se cambia para ejercer un mayor o menor daño
@@ -17,7 +17,7 @@ Armas y disparo
 ![Little Italy - TestScene - Windows, Mac, Linux - Unity 6 2 (6000 2 7f2) _DX12_ 2025-11-25 23-28-00](https://github.com/user-attachments/assets/3e1edf91-8938-4fa9-b42d-f9e5e87e7d30)
 
 
-Tipos de arma
+# Tipos de arma
 Glock
 
     Este arma hace 10 de daño al enemigo, necesitando 10 balas para matarlo
@@ -32,7 +32,7 @@ Sniper
 
 Se espera incluir un arma más en un futuro
 
-Potenciadores
+# Potenciadores
 
 -Velocidad
 
@@ -41,7 +41,7 @@ Potenciadores
 ![Little Italy - TestScene - Windows, Mac, Linux - Unity 6 2 (6000 2 7f2) _DX12_ 2025-11-25 23-28-00_1](https://github.com/user-attachments/assets/f17bf277-4eb1-49ef-a3bd-e5923b54af44)
 
 
-Enemigos 
+# Enemigos 
 -Hay tres tipos de enemigos:
 
     -Enemigo que te sigue:
@@ -52,13 +52,13 @@ Enemigos
 Se espera añadir 2 enemigos más al juego
 
 
-Level Design
+# Level Design
 
       Nivel provisional del juego inspirado en el de hotline miami
 
 <img width="778" height="447" alt="image" src="https://github.com/user-attachments/assets/4fbbeac4-e396-443f-afc4-5b7069804a0e" />
 
-Nombres:
+## Nombres:
 RKPlane --> Alberto
 
 Santiep9 --> Santi
@@ -71,8 +71,8 @@ fjnl2006 --> Fran
 
 HERNI47 --> Hernan
 
-Implementación de probabilidad
-Probabilidad uniforme
+# Implementación de probabilidad
+## Probabilidad uniforme
 
 Script RandomWeapon.cs
 
@@ -81,14 +81,14 @@ Cada arma del array randomWeapons tiene la misma probabilidad de ser elegida.
 Random.Range(0, n) genera un entero uniforme en el rango [0, n).
 Después, solo el arma seleccionada se activa:
 
-Tipo de probabilidad
-Uniforme discreta
+## Tipo de probabilidad
+### Uniforme discreta
 
 Coste temporal: O(n)
 Coste espacial: O(1)
 
-Método iterativo y versión recursiva
-Método iterativo implementado
+# Método iterativo y versión recursiva
+## Método iterativo implementado
 Script ConoShotgun.cs
 
 El método recorre iterativamente todos los rayos del cono de disparo de la escopeta para:
@@ -101,8 +101,9 @@ Coste espacial: O(1)
 Legibilidad: Alta
 Uso recomendado en tiempo real
 
-Versión recursiva (no usada)
+## Versión recursiva (no usada)
 
+```csharp
 void ProcessRay(int index)
 {
     if (index > rayCount) return;
@@ -110,6 +111,7 @@ void ProcessRay(int index)
     // lógica del rayo
     ProcessRay(index + 1);
 }
+```
 
 Coste temporal: O(n)
 Coste espacial: O(n)
@@ -119,8 +121,8 @@ Consume menos memoria
 Es más clara
 Es más segura para ejecución por frame
 
-Estrategia algorítmica
-Estrategia: Divide y vencerás
+# Estrategia algorítmica
+## Estrategia: Divide y vencerás
 
 Script: ConoShotgun.cs
 
@@ -134,7 +136,7 @@ Coste temporal: O(n)
 Coste espacial: O(1)
 Ventaja: Modularidad y precisión configurable
 
-Árbol lógico de estados del jugador
+# Árbol lógico de estados del jugador
 
 Script: Player.cs
 
@@ -142,16 +144,18 @@ El jugador sigue una estructura de árbol de estados implícito:
 //imagen
 
 Implementación en código:
+```csharp
 if (invincible) return;
 if (!canTakeDamage) return;
 if (Health <= 0) Die();
+```
 
 Esto controla:
 Control de daño
 Transiciones claras entre estados
 Fácil ampliación futura (stun, dash, power-ups)
 
-Conclusion final:
+# Conclusion final:
 El proyecto implementa correctamente:
 Probabilidad uniforme
 Algoritmos iterativos
