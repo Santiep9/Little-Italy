@@ -71,4 +71,92 @@ fjnl2006 --> Fran
 
 HERNI47 --> Hernan
 
+Implementación de probabilidad
+Probabilidad uniforme
+
+Script RandomWeapon.cs
+
+En el script RandomWeapon.cs se utiliza probabilidad uniforme para seleccionar un arma inicial al comenzar la partida.
+Cada arma del array randomWeapons tiene la misma probabilidad de ser elegida.
+Random.Range(0, n) genera un entero uniforme en el rango [0, n).
+Después, solo el arma seleccionada se activa:
+
+Tipo de probabilidad
+Uniforme discreta
+
+Coste temporal: O(n)
+Coste espacial: O(1)
+
+Método iterativo y versión recursiva
+Método iterativo implementado
+Script ConoShotgun.cs
+
+El método recorre iterativamente todos los rayos del cono de disparo de la escopeta para:
+Detectar colisiones
+Identificar enemigos
+Aplicar daño solo una vez por disparo
+
+Coste temporal: O(n), siendo n el número de rayos
+Coste espacial: O(1)
+Legibilidad: Alta
+Uso recomendado en tiempo real
+
+Versión recursiva (no usada)
+
+void ProcessRay(int index)
+{
+    if (index > rayCount) return;
+
+    // lógica del rayo
+    ProcessRay(index + 1);
+}
+
+Coste temporal: O(n)
+Coste espacial: O(n)
+
+Nos quedaríamos con la versión iterativa, ya que:
+Consume menos memoria
+Es más clara
+Es más segura para ejecución por frame
+
+Estrategia algorítmica
+Estrategia: Divide y vencerás
+
+Script: ConoShotgun.cs
+
+El disparo de la escopeta divide el área total de ataque en múltiples sub-problemas independientes:
+El cono se divide en rayCount rayos
+Cada rayo se evalúa de forma independiente
+Los resultados se combinan para construir el daño total
+Cada rayo es una “sub-solución” del problema general.
+
+Coste temporal: O(n)
+Coste espacial: O(1)
+Ventaja: Modularidad y precisión configurable
+
+Árbol lógico de estados del jugador
+
+Script: Player.cs
+
+El jugador sigue una estructura de árbol de estados implícito:
+//imagen
+
+Implementación en código:
+if (invincible) return;
+if (!canTakeDamage) return;
+if (Health <= 0) Die();
+
+Esto controla:
+Control de daño
+Transiciones claras entre estados
+Fácil ampliación futura (stun, dash, power-ups)
+
+Conclusion final:
+El proyecto implementa correctamente:
+Probabilidad uniforme
+Algoritmos iterativos
+Estrategia divide y vencerás
+Estructura de árbol de estados
+Análisis de costes algorítmicos
+
 
