@@ -63,7 +63,7 @@ RKPlane --> Alberto
 
 Santiep9 --> Santi
 
-maizzon14 --> Marcos
+maizzon14 & Marcos --> Marcos
 
 Felix32323232 --> Felix
 
