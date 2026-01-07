@@ -12,7 +12,7 @@ public class ConoShotgun : MonoBehaviour
     private Vector3 origin;
     private float startingAngle;
     private float fov;
-    public int damage = 25;
+    public int damage = 70;
 
     private bool doShotThisFrame;
     private float showTimer;
