@@ -141,7 +141,10 @@ Ventaja: Modularidad y precisión configurable
 Script: Player.cs
 
 El jugador sigue una estructura de árbol de estados implícito:
-//imagen
+
+<p align="center">
+  <img src="ArbolBinario.png" width="500">
+</p>
 
 Implementación en código:
 ```csharp
