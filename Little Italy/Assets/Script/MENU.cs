@@ -6,7 +6,6 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene("Mapping");
-        
     }
 
     public void ExitGame()

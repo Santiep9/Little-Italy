@@ -76,6 +76,10 @@ public class Enemy : MonoBehaviour
 
         if (Health <= 0)
         {
+            if (dropper != null)
+            {
+                dropper.SpawnPowerUp();
+            }
             Destroy(gameObject);
         }
     }
